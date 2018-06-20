@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidator" Version="2.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="2.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Candidate.ApplicationService\Candidate.ApplicationService.csproj" />
+    <ProjectReference Include="..\Candidate.Domain\Candidate.Domain.csproj" />
+    <ProjectReference Include="..\Candidate.Infrastructure.CrossCutting.IoC\Candidate.Infrastructure.CrossCutting.IoC.csproj" />
+  </ItemGroup>
+
+</Project>
